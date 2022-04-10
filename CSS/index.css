@@ -242,7 +242,7 @@ html{
     width: 100%;
 }
 .btn{
-    color: 1px snow black;
+    color: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;

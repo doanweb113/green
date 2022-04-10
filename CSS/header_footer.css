@@ -33,16 +33,7 @@ header{
     justify-content: center;
     position: relative;
 }
-.Hmenu_item-4::after{
-    width: 100%;
-    content: "";
-    position: absolute;
-    bottom: -20px;
-    left: 0;
-    height: 30px;
-    background-color: #4a90e2;
-    opacity: 0;
-}
+
 .Hmenu_item_form{
     width: 100%;
     display: flex;
@@ -165,6 +156,18 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+}
+.Hmenu_cart_hover::after{
+    width: 100%;
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    height: 50px;
+    background-color: #4a90e2;
+    opacity: 0;
+    z-index: 99;
 }
 .Hmenu_cart_item img{
     width: 40%;
@@ -212,14 +215,14 @@ header{
     width: 100%;
 }
 .btn{
-    color: 1px snow black;
+    border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     font-size: 1.1rem;
     padding: 15px 0px;
-    margin: 7px 5px;
+    margin: 7px 0px;
     min-width: 100px;
 }
 .btn-long{
@@ -235,6 +238,10 @@ header{
     border: 1px solid var(--color-orange);
     background-color: var(--color-orange);
 }
+.btn-green{
+    border-color: var(--color-green);
+    background-color: var(--color-green);
+}
 .Hmenu_cart-yes{
     width: 100%;
 }
@@ -244,7 +251,7 @@ header{
     font-size: 1.1rem;
     padding: 15px 0px;
 }
-.Hmenu_cart_hover:hover ~ .Hmenu_cart_drop{
+.Hmenu_item-4:hover .Hmenu_cart_drop{
     opacity: 1;
     pointer-events: auto;
 }
