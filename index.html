@@ -46,10 +46,8 @@
                 </div>
             </div>
 
-            <div class="Hmenu-right">
-                <label for="Hmenu_toggle">
+            <div class="Hmenu-right" onclick="cart_toggle()">
                     <div class="Hmenu_item Hmenu_item-4">
-                        <input type="checkbox" class="Hmenu_toggle mobile" name="Hmenu_cart_toggle" id="Hmenu_toggle">
                         <div class="Hmenu_cart_hover">
                             <p class="Hmenu_item_price"><a href="">Giỏ hàng / <span>999.000.000</span>đ</a></p>
                             <a class="Hmenu_item_box" href="">0</a>
@@ -106,11 +104,10 @@
                                 </div>
                                 <!-- đây là phần không có sản phẩm mua hàng -->
                                 <!-- <p class="Hmenu_cart-no">Không có sản phẩm mua hàng</p> -->
-                                <label for="Hmenu_toggle"><p class="mobile Hmenu_cart_close"><i class="fas fa-times"></i></p></label>
+                                <p class="mobile Hmenu_cart_close"><i class="fas fa-times"></i></p>
                             </div>
                         </div>
                     </div>
-                </label>
             </div>
         </div>
         <input type="checkbox" id="header_connnect_responsive" class="mobile">
@@ -1402,7 +1399,6 @@ $('.news_frame').slick({
         });
     </script>
 
-
-
+    <script src="./JS/header.js"></script>
 </body>
 </html>
