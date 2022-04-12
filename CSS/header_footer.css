@@ -121,7 +121,6 @@ header{
     z-index: 99;
     opacity: 0;
     pointer-events: none;
-    transition: 0.25s linear;
     background-color: white;
 }
 .Hmenu_cart_frame{
@@ -478,12 +477,16 @@ footer{
     .Hmenu_item-4{
         width: 100%;
         justify-content: right;
+        pointer-events: none;
     }
     .Hmenu-right{
         width: 20%;
     }
     .Hmenu_item_price{
         display: none;
+    }
+    .Hmenu_right_none{
+        pointer-events: none;
     }
     .Hmenu_item_bar{
         width: 100%;
@@ -534,15 +537,13 @@ footer{
         top: 10px;
         right: 0;
         border-radius: 50%;
+        z-index: 99;
     }
     .Hmenu_cart_hover{
         justify-content: right;
         pointer-events: none;
     }
     .Hmenu_toggle{
-        opacity: 0;
-    }
-    .Hmenu_toggle:checked ~ .Hmenu_cart_drop{
         opacity: 1;
         pointer-events: auto;
     }
