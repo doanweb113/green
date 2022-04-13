@@ -152,18 +152,22 @@ header{
 }
 .Hmenu_cart_hover{
     width: 100%;
+    position: relative;
+}
+.Hmenu_cart_hover_frame{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
 }
-.Hmenu_cart_hover::after{
+.Hmenu_cart_hover_frame::after{
     width: 100%;
     content: "";
     position: absolute;
-    bottom: -30px;
+    bottom: -60px;
     left: 0;
-    height: 50px;
+    height: 70px;
     background-color: #4a90e2;
     opacity: 0;
     z-index: 99;
@@ -250,7 +254,11 @@ header{
     font-size: 1.1rem;
     padding: 15px 0px;
 }
-.Hmenu_item-4:hover .Hmenu_cart_drop{
+.Hmenu_cart_hover_frame:hover ~ .Hmenu_cart_drop-hover{
+    opacity: 1;
+    pointer-events: auto;
+}
+.Hmenu_cart_drop-hover:hover{
     opacity: 1;
     pointer-events: auto;
 }
@@ -460,6 +468,9 @@ footer{
     /* .mobile{
         display: block;
     } */
+    .display_none{
+        display: none;
+    }
     .Hmenu_item-2{
         display: none;
     }
@@ -477,7 +488,9 @@ footer{
     .Hmenu_item-4{
         width: 100%;
         justify-content: right;
-        pointer-events: none;
+    }
+    .Hmenu_cart_hover_frame{
+        justify-content: right;
     }
     .Hmenu-right{
         width: 20%;
@@ -524,6 +537,7 @@ footer{
         margin-bottom: 10px;
     }
     .Hmenu_cart_close{
+        position: fixed;
         width: 30px;
         height: 30px;
         border: 1px solid red;
@@ -538,12 +552,18 @@ footer{
         right: 0;
         border-radius: 50%;
         z-index: 99;
+        opacity: 0;
+        pointer-events: none;
+    }
+    .Hmenu_cart_close-toggle{
+        opacity: 1;
+        pointer-events: none;
     }
     .Hmenu_cart_hover{
         justify-content: right;
         pointer-events: none;
     }
-    .Hmenu_toggle{
+    .Hmenu_cart_toggle{
         opacity: 1;
         pointer-events: auto;
     }
