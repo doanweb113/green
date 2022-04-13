@@ -150,7 +150,7 @@ html{
     height: 12px;
 }
 /* làm phần drop cart  */
-.Hmenu_cart_drop{
+/* .Hmenu_cart_drop{
     position: absolute;
     top: 120%;
     padding: 15px 7px;
@@ -240,7 +240,7 @@ html{
 }
 .Hmenu_cart_btn{
     width: 100%;
-}
+} */
 .btn{
     color: 1px solid black;
     display: flex;
@@ -265,7 +265,7 @@ html{
     border: 1px solid var(--color-orange);
     background-color: var(--color-orange);
 }
-.Hmenu_cart-yes{
+/* .Hmenu_cart-yes{
     width: 100%;
 }
 .Hmenu_cart-no{
@@ -273,10 +273,6 @@ html{
     text-align: center;
     font-size: 1.1rem;
     padding: 15px 0px;
-}
-.Hmenu_cart_hover:hover ~ .Hmenu_cart_drop{
-    opacity: 1;
-    pointer-events: auto;
 }
 .Hmenu-right{
     width: 20%;
